@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <style>
-  @charset "UTf-8";
+@charset "UTf-8";
 
 
 
@@ -13,13 +13,31 @@ body {
 }
 main{
     background-color: rgb(255, 255, 255);
+}
+@media (max-width: 600px) {
+  main {
     width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1025px) {
+  main {
+    width: 60%;
+  
+
+
     border-radius: 7px;
     padding: 7px;
     margin: auto;
     box-shadow: 2px 2px 7px rgba(143, 191, 66, 0.671);
     
-    
+  } 
 }
 
 h1 {
@@ -87,8 +105,7 @@ video{
     box-shadow: 0px 2px 7px rgb(49, 197, 220);
     border-radius: 7px;
     width: 100%;
-    
-    
+    margin: auto;   
 }
 hr{
     border: 1.5px solid rgb(159, 93, 235);
